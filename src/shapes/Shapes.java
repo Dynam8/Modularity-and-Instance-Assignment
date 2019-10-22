@@ -10,12 +10,21 @@ package shapes;
  * @author S331471193
  */
 public class Shapes {
-
+    protected double volume;
+    protected double SA;
+    
+    void putVolume(double v){
+        System.out.printf("The volume of the object is "+Math.round(v)+"\n");
+    }
+    void putSA(double sa){
+        System.out.printf("The surface area of the object is "+Math.round(sa)+"\n");
+    }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Pyramid4 mine = new Pyramid4(10.0, 10.0, 50.0);
+        mine.putSA(mine.calcVolume(mine.base, mine.height, mine.depth));
     }
     
 }
