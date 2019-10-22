@@ -10,8 +10,8 @@ package shapes;
  * @author S331471193
  */
 public class Circular extends Shapes{
-    double radius;
-    double circ;
+    protected double radius;
+    protected double circ;
     
     double getRad(){
         return radius;
