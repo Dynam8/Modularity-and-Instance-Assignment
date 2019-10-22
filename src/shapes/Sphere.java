@@ -18,4 +18,7 @@ public class Sphere extends Circular{
     public double calcVolume(double rad){
         return 4/3*Math.PI*rad*rad*rad;
     }
+    public double calcSA(double r){
+        return 4*Math.PI*r*r;
+    }
 }
