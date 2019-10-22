@@ -9,8 +9,13 @@ package shapes;
  *
  * @author S331471193
  */
-public class Cone {
+public class Cone extends Circular{
     private double height;
+    
+    public Cone(double r, double h){
+        radius = r;
+        height = h;
+    }
     
     public double getHeight(){
         return height;
