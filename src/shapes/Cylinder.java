@@ -9,8 +9,13 @@ package shapes;
  *
  * @author S331471193
  */
-public class Cylinder {
+public class Cylinder extends Circular{
     private double height;
+    
+    public Cylinder(double r, double h){
+        radius = r;
+        height = h;
+    }
     
     public double calcVolume(double r, double h){
         return Math.PI*r*r*h;
