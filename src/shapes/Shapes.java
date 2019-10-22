@@ -10,8 +10,8 @@ package shapes;
  * @author S331471193
  */
 public class Shapes {
-    public double volume;
-    public double SA;
+    protected double volume;
+    protected double SA;
     
     void putVolume(double v){
         System.out.printf("The volume of the object is "+Math.round(v)+"\n");
