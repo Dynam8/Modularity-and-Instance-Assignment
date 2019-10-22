@@ -23,9 +23,8 @@ public class Shapes {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Sphere mine = new Sphere(10.0);
-        mine.volume = mine.calcVolume(mine.radius);
-        mine.putVolume(mine.volume);
+        Cone mine = new Cone(10.0, 10.0);
+        mine.putVolume(mine.calcVolume(mine.getRad(), mine.getHeight()));
     }
     
 }
