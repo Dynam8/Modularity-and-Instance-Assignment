@@ -37,9 +37,19 @@ public class Prism extends Shapes{
         return height;
     }
     public double calcVolume(double l, double w, double h){
+        // Prism
         return l*w*h;
     }
     public double calcSA(double l, double w, double h){
+        // Prism
         return (2*l*w) + (2*l*h) + (2*w*h);
+    }
+    public double calcVolume(double b){
+        // Cube
+        return b*b*b;
+    }
+    public double calcSA(double b){
+        // Cube
+        return b*b*6;
     }
 }
