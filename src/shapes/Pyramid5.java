@@ -10,19 +10,18 @@ package shapes;
  * @author S331471193
  */
 public class Pyramid5 extends Triangle{
-    private double slant;
     
     public Pyramid5(double b, double h, double d){
         base = b;
         height = h;
         depth = d;
-        slant = Math.sqrt((b*b)+(h*h));
     }
     
     public double calcVolume(double b, double h, double d){
         return b*h*d/3;
     }
-    public double calcSA(double b, double h, double s){
+    public double calcSA(double b, double h){
+        double s = Math.sqrt((b*b)+(h*h));
         return b*h + 2*b*s;
     }
 }
