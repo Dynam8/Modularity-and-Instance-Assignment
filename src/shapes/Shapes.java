@@ -23,7 +23,8 @@ public class Shapes {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        Prism Spike = new Prism(10.0);
+        Spike.putVolume(Spike.calcVolume(Spike.getWidth()));
     }
     
 }
