@@ -17,14 +17,14 @@ public class Shapes {
         System.out.printf("The volume of the object is "+Math.round(v)+"\n");
     }
     void putSA(double sa){
-        System.out.printf("The surface area of the object is"+Math.round(sa)+"\n");
+        System.out.printf("The surface area of the object is "+Math.round(sa)+"\n");
     }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Cone mine = new Cone(10.0, 10.0);
-        mine.putVolume(mine.calcVolume(mine.getRad(), mine.getHeight()));
+        Prism Spike = new Prism(10.0);
+        Spike.putVolume(Spike.calcVolume(Spike.getWidth()));
     }
     
 }
