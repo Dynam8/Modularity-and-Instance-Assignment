@@ -23,8 +23,8 @@ public class Shapes {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Pyramid4 mine = new Pyramid4(10.0, 10.0, 50.0);
-        mine.putSA(mine.calcVolume(mine.base, mine.height, mine.depth));
+        Prism Spike = new Prism(10.0);
+        Spike.putVolume(Spike.calcVolume(Spike.getWidth()));
     }
     
 }
