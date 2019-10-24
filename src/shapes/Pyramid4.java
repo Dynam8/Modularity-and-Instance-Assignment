@@ -15,13 +15,13 @@ public class Pyramid4 extends Triangle{
         base = b;
         height = h;
         depth = d;
-        slant = Math.sqrt((b*b)+(h*h));
     }
     
     public double calcVolume(double b, double h, double d){
         return (0.5*b*h)*d/3;
     }
-    public double calcSA(double b, double h, double s){
+    public double calcSA(double b, double h){
+        double s = Math.sqrt((b*b)+(h*h));
         return (b*h/2)+(3*s*b/2);
     }      
 }
