@@ -25,6 +25,8 @@ public class Shapes {
     public static void main(String[] args) {
         Prism Spike = new Prism(10.0);
         Spike.putVolume(Spike.calcVolume(Spike.getWidth()));
+        Cylinder Sam = new Cylinder(5.0,80.0);
+        Sam.putSA(Sam.calcSA(Sam.getRad(),Sam.getHeight()));
     }
     
 }
